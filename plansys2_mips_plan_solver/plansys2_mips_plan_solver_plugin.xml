@@ -1,0 +1,7 @@
+<class_libraries>
+  <library path="plansys2_mips_plan_solver">
+    <class name="plansys2/MIPSPlanSolver"  type="plansys2::MIPSPlanSolver" base_class_type="plansys2::PlanSolverBase">
+      <description></description>
+    </class>
+  </library>
+</class_libraries>
