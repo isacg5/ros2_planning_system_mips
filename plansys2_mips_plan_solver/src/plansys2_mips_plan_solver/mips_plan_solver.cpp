@@ -62,14 +62,15 @@ MIPSPlanSolver::getPlan(
   std::string line;
   std::ifstream plan_file("/tmp/" + node_namespace + "/plan");
   bool solution = false;
-
+  std::string nums = "0123456789";
+  
   if (plan_file.is_open()) {
     while (getline(plan_file, line)) {
       if (!solution) {
         if (line.find("ff: found legal plan as follows") != std::string::npos) {
           solution = true;
         }
-      } else if (line.front() != ';') {
+      } else if (nums.find(line.front()) != std::string::npos) {
         PlanItem item;
         size_t colon_pos = line.find(":");
         size_t colon_par = line.find(")");
