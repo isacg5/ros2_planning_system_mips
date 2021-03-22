@@ -56,7 +56,7 @@ MIPSPlanSolver::getPlan(
   problem_out.close();
 
   system(
-    ("/home/isabel/plansys_ws/src/plan_sist_cogn/planners/mips_xxl/mips_xxl -o /tmp/" + node_namespace + "/domain.pddl -f /tmp/" +
+    ("~/mips_xxl -o /tmp/" + node_namespace + "/domain.pddl -f /tmp/" +
     node_namespace + "/problem.pddl > /tmp/" + node_namespace + "/plan").c_str());
 
   std::string line;
@@ -116,7 +116,7 @@ MIPSPlanSolver::check_domain(
   problem_out.close();
 
   system(
-    ("/home/isabel/plansys_ws/src/plan_sist_cogn/planners/mips_xxl/mips_xxl -o /tmp/" + node_namespace + "/check_domain.pddl -f /tmp/" +
+    ("~/mips_xxl -o /tmp/" + node_namespace + "/check_domain.pddl -f /tmp/" +
     node_namespace + "/check_problem.pddl > /tmp/" + node_namespace + "/check.out").c_str());
 
   std::ifstream plan_file("/tmp/" + node_namespace + "/check.out");
