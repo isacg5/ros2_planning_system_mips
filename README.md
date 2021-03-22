@@ -4,7 +4,7 @@
 
 ## How to use it?
 
-1º Download the planner by clicking on mips_xxl [mips_xxl](https://github.com/isacg5/ros2_planning_system_mips/raw/main/mips_xxl).
+1º Download the planner by clicking on [mips_xxl](https://github.com/isacg5/ros2_planning_system_mips/raw/main/mips_xxl).
 
 2º Move the planner to your home.
 
