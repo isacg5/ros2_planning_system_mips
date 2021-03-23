@@ -1,3 +1,3 @@
-# POPF Plan solver
+# MIPS Plan solver
 
-This package contains a plan solver that uses [popf](https://github.com/fmrico/popf) for solving PDDL plans.
+This package contains a plan solver that uses mips-xxl for solving PDDL plans.
