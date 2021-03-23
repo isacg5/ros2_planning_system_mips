@@ -1,5 +1,0 @@
-planner:
-  ros__parameters:
-    plan_solver_plugins: ["MIPS"]
-    MIPS:
-      plugin: "plansys2/MIPSPlanSolver"
