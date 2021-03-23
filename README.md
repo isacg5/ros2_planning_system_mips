@@ -2,11 +2,9 @@
 
 ## Prerequisites
 
-1º For using the mips plan solver, you need to have the following repository functional in your workspace:
+For using this mips plugin, you need to have installed in your workspace [plansys2](https://github.com/IntelligentRoboticsLabs/ros2_planning_system).
 
-<https://github.com/IntelligentRoboticsLabs/ros2_planning_system>
-
-follow the instructions given in that repository for the instalation.
+Visit this [Web Page](http://intelligentroboticslab.gsyc.urjc.es/ros2_planning_system.github.io/) for more information about instalation.
 
 ## Installation
 
@@ -118,5 +116,3 @@ ros2 run plansys2_terminal plansys2_terminal
 * Marina Gil Pensado - [@marinagilpen](https://github.com/marinagilpen/)
 * Isabel Cebollada Gracia - [@isacg5](https://github.com/isacg5/)
 * Noel Jimenez Garcia - [@noel215](https://github.com/noel215/)
-
-**Visit the [Web Page](http://intelligentroboticslab.gsyc.urjc.es/ros2_planning_system.github.io/) for tutorials, videos and more!!**
