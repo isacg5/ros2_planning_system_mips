@@ -2,17 +2,11 @@
 
 ## Prerequisites
 
-1º Clone the IntelligentRoboticsLabs repository into your src workspace directory:
+1º For using the mips plan solver, you need to have the following repository functional in your workspace:
 
-```
-git clone https://github.com/IntelligentRoboticsLabs/ros2_planning_system
-```
+<https://github.com/IntelligentRoboticsLabs/ros2_planning_system>
 
-2º Install dependencies into your src:
-
-```
-rosdep install --from-paths . --ignore-src -r -y
-```
+follow the instructions given in that repository for the instalation.
 
 ## Installation
 
@@ -53,7 +47,7 @@ colcon build
 6º Add to ~/.bashrc the location of the planner executable in MIPS_XXL variable. For example:
 
 ```
-echo 'export MIPS_XXL=/home/myuser/mips_xxl' >> ~/.bashrc 
+echo 'export MIPS_XXL=/home/myuser/bin/mips_xxl' >> ~/.bashrc 
 ```
 
 and open a new terminal.
@@ -67,21 +61,23 @@ chmod +x $MIPS_XXL
 ## Execution example
 
 
-4º Download this domain: [example](https://github.com/isacg5/ros2_planning_system_mips/raw/main/viajes_domain_durative_actions.pddl).
+1º Download this domain: [example](https://github.com/isacg5/ros2_planning_system_mips/raw/main/viajes_domain_durative_actions.pddl).
 
-5º Open terminal and execute:
+2º Open terminal and execute:
 
 ```
-ros2 launch plansys2_bringup plansys2_bringup_launch_distributed.py model_file:=/home/myuser/Downloads/viajes_domain_durative_actions.pddl
+ros2 launch plansys2_bringup plansys2_bringup_launch_distributed.py model_file:=/home/myuser/bin/viajes_domain_durative_actions.pddl
 ```
 
-6º Open a new terminal and execute:
+Remember to change the model_file path to the location where the domain is.
+
+3º Open a new terminal and execute:
 
 ```
 ros2 run plansys2_terminal plansys2_terminal 
 ```
 
-7º You can test the above example by running these [commands](https://github.com/isacg5/ros2_planning_system_mips/raw/main/commands). 
+4º You can test the above example by running these [commands](https://github.com/isacg5/ros2_planning_system_mips/raw/main/commands). 
 
 ## Support
 
