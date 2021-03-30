@@ -17,7 +17,7 @@ git clone https://github.com/isacg5/ros2_planning_system_mips.git
 2º Move the plansys2_mips_plan_solver directory into the ros2_planning_system one:
 
 ```
-mv ~/myworkspace/src/ros2_planning_system_mips/plansys2_mips_plan_solver ~/myworkspace/src/ros2_planning_system
+mv $HOME/myworkspace/src/ros2_planning_system_mips/plansys2_mips_plan_solver $HOME/myworkspace/src/ros2_planning_system
 ```
 
 3º Add the following lines at the end of the file plansys2_params.yaml located in ros2_planning_system/plansys2_bringup/params/ directory:
@@ -40,12 +40,12 @@ cd ~/myworkspace
 colcon build
 ```
 
-5º Download the planner by clicking on [mips_xxl](https://github.com/isacg5/ros2_planning_system_mips/raw/main/mips_xxl).
+5º Download the planner by clicking on [mips-xxl](https://github.com/tvaquero/itsimple/blob/master/myPlanners/mips-xxl).
 
 6º Add to ~/.bashrc the location of the planner executable in MIPS_XXL variable. For example:
 
 ```
-echo 'export MIPS_XXL=/home/myuser/bin/mips_xxl' >> ~/.bashrc 
+echo 'export MIPS_XXL=$HOME/bin/mips-xxl' >> ~/.bashrc 
 ```
 
 and open a new terminal.
@@ -54,28 +54,7 @@ and open a new terminal.
 
 ```
 chmod +x $MIPS_XXL
-```
-
-## Execution example
-
-
-1º Download this domain: [example](https://github.com/isacg5/ros2_planning_system_mips/raw/main/viajes_domain_durative_actions.pddl).
-
-2º Open terminal and execute:
-
-```
-ros2 launch plansys2_bringup plansys2_bringup_launch_distributed.py model_file:=/home/myuser/bin/viajes_domain_durative_actions.pddl
-```
-
-Remember to change the model_file path to the location where the domain is.
-
-3º Open a new terminal and execute:
-
-```
-ros2 run plansys2_terminal plansys2_terminal 
-```
-
-4º You can test the above example by running these [commands](https://github.com/isacg5/ros2_planning_system_mips/raw/main/commands). 
+``` 
 
 ## Support
 
